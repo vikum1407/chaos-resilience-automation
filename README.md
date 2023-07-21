@@ -36,3 +36,5 @@ kubectl cp ../scripts/ $(kubectl get pod -l "app=resilience" -o jsonpath='{.item
 kubectl exec  -it $(kubectl get pod -l "app=resilience" -o jsonpath='{.items[0].metadata.name}') -- sh -c 'ONE_SHOT=true; /<resilience>-Script.yaml'
 
 ```
+
+![Logo](https://github.com/vikum1407/chaos-resilience-automation/blob/master/ResilienceAutomationFramework.PNG)
